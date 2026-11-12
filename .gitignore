@@ -1,0 +1,11 @@
+# Öffentliches Repo: Nur der Designentwurf (Startseite und Styleguide) wird
+# versioniert. README, interne Notizen, Material der Kundin und Versuchsdateien
+# bleiben ausschließlich lokal.
+/*
+!/.gitignore
+!/veroeffentlichen.sh
+!/02_unsere_arbeit/
+/02_unsere_arbeit/*
+!/02_unsere_arbeit/entwurf/
+tmp/
+__pycache__/
