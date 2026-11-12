@@ -11,7 +11,11 @@
   <meta name="generator" content="Andersen Webworks Preview AW-PREVIEW-IMMOSENIO-2026-11-12">
   <meta name="aw-preview-id" content="AW-PREVIEW-IMMOSENIO-2026-11-12">
   <meta name="rights" content="Konzept- und Website-Entwurf von Andersen Webworks. Nutzungsrechte werden im Rahmen einer Beauftragung eingeräumt.">
+  <meta name="theme-color" content="#f4efe7">
+  <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/immosenio.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body data-aw-preview-id="AW-PREVIEW-IMMOSENIO-2026-11-12">
   <a class="sprunglink" href="#content">Zum Inhalt springen</a>
@@ -27,49 +31,52 @@
 
     <div class="sg-kopf">
       <div class="container sg-kopf__innen">
-        <p class="eyebrow">Designentwurf</p>
-        <h1>Styleguide</h1>
-        <p class="lead">Dieser Styleguide zeigt, aus welchen Bausteinen die neue Startseite besteht: Farben, Schriften, Buttons, Karten, Formulare, Listen und Abstände. Jeder Baustein ist hier einmal als Muster zu sehen. Die Startseite und diese Seite nutzen dieselbe Formatvorlage.</p>
+        <p class="eyebrow anim">Designentwurf</p>
+        <h1 class="anim" style="--d:1">Styleguide: <em>die Bausteine</em> der neuen Seite</h1>
+        <p class="lead anim" style="--d:2">Dieser Styleguide zeigt, woraus die neue Startseite besteht: Farben, Schriften, Buttons, Karten, Formulare, Listen, Abstände und Bewegung. Jeder Baustein ist einmal als Muster zu sehen, dazu steht jeweils kurz, wie er auf Ihrer bestehenden Avada-Seite umgesetzt wird. Startseite und Styleguide nutzen dieselbe Formatvorlage.</p>
         <nav class="sg-inhalt" aria-label="Inhalt dieser Seite">
-          <a href="#bleibt">Was bleibt, was sich ändert</a>
+          <a href="#idee">Designidee</a>
           <a href="#farben">Farben</a>
           <a href="#schriften">Schriften</a>
           <a href="#buttons">Buttons</a>
           <a href="#objektkarte">Objektkarte</a>
-          <a href="#ratgeberkarte">Ratgeberkarte</a>
+          <a href="#kennzahlen">Kennzahlen und Schritte</a>
+          <a href="#ratgeberkarte">Ratgeberzeile</a>
           <a href="#formulare">Formularfelder</a>
           <a href="#listen">Listen und Zitat</a>
           <a href="#abstaende">Abstände und Raster</a>
-          <a href="#bausteine">Weitere Bausteine</a>
+          <a href="#bewegung">Bewegung</a>
+          <a href="#bausteine">Kopf, Hero und Fuß</a>
+          <a href="#zugaenglich">Barrierearm</a>
         </nav>
       </div>
     </div>
 
-    <!-- Was bleibt -->
-    <section class="sg-abschnitt" id="bleibt" aria-labelledby="bleibt-titel">
+    <!-- Designidee -->
+    <section class="sg-abschnitt" id="idee" aria-labelledby="idee-titel">
       <div class="container">
-        <h2 id="bleibt-titel">Was bleibt, was sich ändert</h2>
-        <p class="lead">Die Seite soll als Ihre Seite erkennbar bleiben. Verändert wird, wie sie aussieht, nicht, was sie sagt.</p>
+        <h2 id="idee-titel">Designidee</h2>
+        <p class="lead">Ruhig, hochwertig, vertrauenswürdig: eine Seite wie eine gute Zeitschrift. Große Überschriften in einer eleganten Serifenschrift, viel Weißraum, ein starkes Porträt und klare Zahlen. Rostrot aus Ihrem Logo bleibt die einzige Akzentfarbe.</p>
         <div class="sg-vergleich">
           <div class="sg-box">
             <h3>Das bleibt</h3>
             <ul>
               <li>Ihr Logo, unverändert.</li>
-              <li>Rostrot als Akzentfarbe.</li>
-              <li>Alle Inhalte: Texte, Überschriften, Objekte, Kontaktdaten, Reihenfolge der Abschnitte.</li>
-              <li>Anthrazit als Grundton für Text.</li>
-              <li>Eine Serifenschrift für Überschriften.</li>
+              <li>Rostrot als Akzentfarbe, abgeleitet vom Logo.</li>
+              <li>Alle Inhalte: Texte, Überschriften, Objekte, Kontaktdaten, Reihenfolge der Themen.</li>
+              <li>Das Porträt von Frau Thomas und alle Objektbilder.</li>
               <li>WordPress mit Avada als technische Grundlage.</li>
             </ul>
           </div>
           <div class="sg-box">
             <h3>Das ändert sich</h3>
             <ul>
-              <li>Typografie: größere Schrift, ruhigere Zeilen, klare Stufen.</li>
-              <li>Abstände: mehr Weißraum zwischen und innerhalb der Abschnitte.</li>
-              <li>Farbdisziplin: Rostrot nur noch für die wichtigste Handlung je Abschnitt; Blau und Grün entfallen.</li>
-              <li>Bausteine: einheitliche Karten, Datenzeilen, Listen und Formulare statt gleich lauter Blöcke.</li>
-              <li>Zweitrangige Aktionen erscheinen als Kontur oder Textlink.</li>
+              <li>Schrift: große Überschriften mit Charakter, gut lesbarer Fließtext.</li>
+              <li>Bilder: das Porträt führt die Seite an, Objekte erscheinen als hochwertige Karten.</li>
+              <li>Rhythmus: helle und dunkle Abschnitte wechseln sich ab, mit viel Weißraum.</li>
+              <li>Vertrauen: Kennzahlen, Qualifikationen und Kontakt sind sofort sichtbar.</li>
+              <li>Bewegung: ruhiges Einblenden und sanfte Bildeffekte, jederzeit abschaltbar.</li>
+              <li>Handy: vollwertiges Menü und feste Anruf-Leiste.</li>
             </ul>
           </div>
         </div>
@@ -80,61 +87,34 @@
     <section class="sg-abschnitt" id="farben" aria-labelledby="farben-titel">
       <div class="container">
         <h2 id="farben-titel">Farben</h2>
-        <p class="lead">Wenige Farben, klar verteilt. Rostrot ist die einzige Akzentfarbe. Warme helle Flächen wechseln mit Weiß; der Fuß der Seite ist dunkel.</p>
+        <p class="lead">Ein tiefes Tintenblau gibt Ruhe und Ernst, warmes Papier sorgt für Wärme, Rostrot setzt gezielt die Handlung. Alle Textfarben erreichen mindestens Kontrast AA (4,5 : 1).</p>
 
         <div class="sg-farben">
           <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-rost);"></div>
+            <div class="sg-farbe__muster" style="background: var(--c-tinte);"></div>
             <div class="sg-farbe__text">
-              <h3>Rostrot</h3>
-              <span class="sg-farbe__hex">#b83318</span>
-              <p>Wichtigste Handlung je Abschnitt (Button), kleine Akzente, Textlinks.</p>
-              <p class="kontrast">Weiß darauf 5,96 : 1 · als Text auf Weiß 5,96 : 1, auf Warm 5,43 : 1</p>
+              <h3>Tinte</h3>
+              <span class="sg-farbe__hex">#0f1d2c</span>
+              <p>Text und Überschriften, dunkle Abschnitte, Fläche der Anfrage-Karte.</p>
+              <p class="kontrast">Auf Weiß 17,04 : 1 · auf Papier 14,89 : 1 · Weiß darauf 17,04 : 1</p>
             </div>
           </div>
           <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-rost-dunkel);"></div>
+            <div class="sg-farbe__muster" style="background: var(--c-nacht);"></div>
             <div class="sg-farbe__text">
-              <h3>Rostrot dunkel</h3>
-              <span class="sg-farbe__hex">#8f2711</span>
-              <p>Zustand beim Darüberfahren (Hover) von Button und Textlink.</p>
-              <p class="kontrast">Weiß darauf 8,52 : 1 · als Text auf Weiß 8,52 : 1, auf Warm 7,76 : 1</p>
+              <h3>Nacht</h3>
+              <span class="sg-farbe__hex">#08111b</span>
+              <p>Fuß der Seite und Kontaktleiste oben.</p>
+              <p class="kontrast">Weiß darauf 18,98 : 1</p>
             </div>
           </div>
           <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-text);"></div>
+            <div class="sg-farbe__muster" style="background: var(--c-papier);"></div>
             <div class="sg-farbe__text">
-              <h3>Text</h3>
-              <span class="sg-farbe__hex">#2b2b2a</span>
-              <p>Fließtext und Überschriften, ein dunkles Anthrazit.</p>
-              <p class="kontrast">Auf Weiß 14,17 : 1 · auf Warm 12,92 : 1</p>
-            </div>
-          </div>
-          <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-text-leise);"></div>
-            <div class="sg-farbe__text">
-              <h3>Nebentext</h3>
-              <span class="sg-farbe__hex">#5c5b56</span>
-              <p>Beschriftungen, Daten, Beschreibungen unter Titeln.</p>
-              <p class="kontrast">Auf Weiß 6,81 : 1 · auf Warm 6,20 : 1</p>
-            </div>
-          </div>
-          <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-anthrazit);"></div>
-            <div class="sg-farbe__text">
-              <h3>Anthrazit</h3>
-              <span class="sg-farbe__hex">#3c3c3b</span>
-              <p>Markenton Ihrer heutigen Seite. Verwendet für die Kontur zweitrangiger Buttons.</p>
-              <p class="kontrast">Auf Weiß 11,04 : 1 · auf Warm 10,07 : 1</p>
-            </div>
-          </div>
-          <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-warm);"></div>
-            <div class="sg-farbe__text">
-              <h3>Warm</h3>
-              <span class="sg-farbe__hex">#f7f4ef</span>
-              <p>Helle Fläche im Wechsel mit Weiß, damit Abschnitte ohne harte Trennung erkennbar bleiben.</p>
-              <p class="kontrast">Text darauf 12,92 : 1</p>
+              <h3>Papier</h3>
+              <span class="sg-farbe__hex">#f4efe7</span>
+              <p>Warme helle Fläche im Wechsel mit Weiß.</p>
+              <p class="kontrast">Tinte darauf 14,89 : 1 · Nebentext darauf 6,34 : 1</p>
             </div>
           </div>
           <div class="sg-farbe">
@@ -142,81 +122,88 @@
             <div class="sg-farbe__text">
               <h3>Weiß</h3>
               <span class="sg-farbe__hex">#ffffff</span>
-              <p>Grundfläche, Karten und Formularfelder.</p>
-              <p class="kontrast">Text darauf 14,17 : 1</p>
+              <p>Karten, Formularfelder, helle Abschnitte.</p>
+              <p class="kontrast">Tinte darauf 17,04 : 1 · Nebentext darauf 7,25 : 1</p>
+            </div>
+          </div>
+          <div class="sg-farbe">
+            <div class="sg-farbe__muster" style="background: var(--c-rost);"></div>
+            <div class="sg-farbe__text">
+              <h3>Rostrot</h3>
+              <span class="sg-farbe__hex">#b23a18</span>
+              <p>Wichtigste Handlung (Button), Akzentwörter in Überschriften, Linien, Zahlen.</p>
+              <p class="kontrast">Weiß darauf 5,98 : 1 · als Text auf Weiß 5,98 : 1, auf Papier 5,23 : 1</p>
+            </div>
+          </div>
+          <div class="sg-farbe">
+            <div class="sg-farbe__muster" style="background: var(--c-rost-dunkel);"></div>
+            <div class="sg-farbe__text">
+              <h3>Rostrot dunkel</h3>
+              <span class="sg-farbe__hex">#8c2a0f</span>
+              <p>Zustand beim Darüberfahren (Hover) und Text auf sandfarbenen Flächen.</p>
+              <p class="kontrast">Weiß darauf 8,56 : 1 · als Text auf Weiß 8,56 : 1, auf Papier 7,48 : 1</p>
+            </div>
+          </div>
+          <div class="sg-farbe">
+            <div class="sg-farbe__muster" style="background: var(--c-rost-hell);"></div>
+            <div class="sg-farbe__text">
+              <h3>Rostrot hell</h3>
+              <span class="sg-farbe__hex">#ff9d73</span>
+              <p>Akzent auf dunklen Flächen. Nur dort verwenden, auf Weiß zu schwach.</p>
+              <p class="kontrast">Auf Tinte 8,38 : 1 · auf Nacht 9,33 : 1</p>
+            </div>
+          </div>
+          <div class="sg-farbe">
+            <div class="sg-farbe__muster" style="background: var(--c-leise);"></div>
+            <div class="sg-farbe__text">
+              <h3>Nebentext</h3>
+              <span class="sg-farbe__hex">#4b5868</span>
+              <p>Beschriftungen, Daten, Erläuterungen unter Titeln.</p>
+              <p class="kontrast">Auf Weiß 7,25 : 1 · auf Papier 6,34 : 1</p>
+            </div>
+          </div>
+          <div class="sg-farbe">
+            <div class="sg-farbe__muster" style="background: var(--c-leise-hell);"></div>
+            <div class="sg-farbe__text">
+              <h3>Nebentext hell</h3>
+              <span class="sg-farbe__hex">#b8c2cf</span>
+              <p>Erläuternder Text auf dunklen Flächen.</p>
+              <p class="kontrast">Auf Tinte 9,46 : 1 · auf Nacht 10,54 : 1</p>
             </div>
           </div>
           <div class="sg-farbe">
             <div class="sg-farbe__muster" style="background: var(--c-sand);"></div>
             <div class="sg-farbe__text">
               <h3>Sand</h3>
-              <span class="sg-farbe__hex">#ddd3c3</span>
-              <p>Feine Linien und Kartenrahmen. Sand trägt keine Information und wird nie für Text oder Bedienelemente verwendet.</p>
-              <p class="kontrast">Auf Weiß 1,48 : 1 (nur Zierlinie)</p>
+              <span class="sg-farbe__hex">#e6dccb</span>
+              <p>Ruhige Bildhintergründe und feine Flächen. Nicht für Text und nicht als Hintergrund für Rostrot-Text (nur 4,40 : 1).</p>
+              <p class="kontrast">Tinte darauf 12,55 : 1</p>
             </div>
           </div>
           <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-feldrand);"></div>
+            <div class="sg-farbe__muster" style="background: var(--c-feld);"></div>
             <div class="sg-farbe__text">
               <h3>Feldrand</h3>
-              <span class="sg-farbe__hex">#7d786d</span>
-              <p>Rahmen von Formularfeldern, damit Felder gut erkennbar sind.</p>
-              <p class="kontrast">Auf Weiß 4,39 : 1 (verlangt für Bedienelemente: 3 : 1)</p>
-            </div>
-          </div>
-          <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-dunkel);"></div>
-            <div class="sg-farbe__text">
-              <h3>Dunkel</h3>
-              <span class="sg-farbe__hex">#212326</span>
-              <p>Fußbereich und Kontaktleiste. Ein Ton Ihrer heutigen Seite.</p>
-              <p class="kontrast">Weiß darauf 15,75 : 1</p>
-            </div>
-          </div>
-          <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-dunkel-text);"></div>
-            <div class="sg-farbe__text">
-              <h3>Fußtext</h3>
-              <span class="sg-farbe__hex">#ece8e1</span>
-              <p>Text und Links auf dunklem Grund.</p>
-              <p class="kontrast">Auf Dunkel 12,90 : 1</p>
-            </div>
-          </div>
-          <div class="sg-farbe">
-            <div class="sg-farbe__muster" style="background: var(--c-dunkel-leise);"></div>
-            <div class="sg-farbe__text">
-              <h3>Fußtext leise</h3>
-              <span class="sg-farbe__hex">#b9b6ae</span>
-              <p>Nebentext auf dunklem Grund, etwa der Vermerk in der Fußleiste.</p>
-              <p class="kontrast">Auf Dunkel 7,78 : 1</p>
+              <span class="sg-farbe__hex">#6f7a88</span>
+              <p>Rahmen der Formularfelder; deutlich erkennbar, wie von der Barrierefreiheit verlangt (3 : 1).</p>
+              <p class="kontrast">Auf Weiß 4,36 : 1 · auf Papier 3,81 : 1</p>
             </div>
           </div>
         </div>
 
-        <div class="sg-tabelle-wrap">
-          <table class="sg-tabelle">
-            <caption>Kontrast der wichtigsten Farbpaare (Zielwert WCAG AA: Fließtext mindestens 4,5 : 1, große Schrift und Bedienelemente mindestens 3 : 1)</caption>
-            <thead>
-              <tr><th scope="col">Vordergrund</th><th scope="col">Hintergrund</th><th scope="col">Verhältnis</th><th scope="col">AA</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Text #2b2b2a</td><td>Weiß #ffffff</td><td>14,17 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Text #2b2b2a</td><td>Warm #f7f4ef</td><td>12,92 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Nebentext #5c5b56</td><td>Weiß #ffffff</td><td>6,81 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Nebentext #5c5b56</td><td>Warm #f7f4ef</td><td>6,20 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Rostrot #b83318</td><td>Weiß #ffffff</td><td>5,96 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Rostrot #b83318</td><td>Warm #f7f4ef</td><td>5,43 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Weiß #ffffff</td><td>Rostrot #b83318 (Button)</td><td>5,96 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Weiß #ffffff</td><td>Rostrot dunkel #8f2711 (Hover)</td><td>8,52 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Anthrazit #3c3c3b</td><td>Weiß #ffffff</td><td>11,04 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Fußtext #ece8e1</td><td>Dunkel #212326</td><td>12,90 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Fußtext leise #b9b6ae</td><td>Dunkel #212326</td><td>7,78 : 1</td><td class="ok">erfüllt</td></tr>
-              <tr><td>Feldrand #7d786d</td><td>Weiß #ffffff</td><td>4,39 : 1</td><td class="ok">erfüllt (Bedienelement, 3 : 1)</td></tr>
-              <tr><td>Rostrot #b83318</td><td>Dunkel #212326</td><td>2,64 : 1</td><td class="ok">nicht erfüllt – auf dunklem Grund wird Rostrot nicht für Text verwendet</td></tr>
-            </tbody>
-          </table>
+        <h3>So wirken die Farbpaare im Einsatz</h3>
+        <div class="sg-paare">
+          <div class="sg-paar" style="background:#fff; color: var(--c-tinte);"><strong>Überschrift</strong><span>Tinte auf Weiß · 17,04 : 1</span></div>
+          <div class="sg-paar" style="background: var(--c-papier); color: var(--c-leise);"><strong style="color: var(--c-tinte);">Überschrift</strong><span>Nebentext auf Papier · 6,34 : 1</span></div>
+          <div class="sg-paar" style="background: var(--c-rost); color:#fff;"><strong>Button</strong><span>Weiß auf Rostrot · 5,98 : 1</span></div>
+          <div class="sg-paar" style="background: var(--c-tinte); color: var(--c-rost-hell);"><strong>Akzent</strong><span>Rostrot hell auf Tinte · 8,38 : 1</span></div>
+          <div class="sg-paar" style="background: var(--c-tinte); color: var(--c-leise-hell);"><strong style="color:#fff;">Überschrift</strong><span>Nebentext hell auf Tinte · 9,46 : 1</span></div>
         </div>
-        <p class="sg-hinweis">Berechnet nach der WCAG-Formel für relative Helligkeit. Blau (#198fd9), Grün (#65bc7b) und der sehr dunkle Ton #141617 Ihrer heutigen Seite entfallen.</p>
+
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Die Farben werden unter Avada → Optionen → Farben eingetragen: Hauptfarbe Rostrot, Textfarbe Tinte, Überschriftenfarbe Tinte, Linkfarbe Rostrot dunkel. Die weiteren Töne kommen in die Avada-Farbpalette, damit sie in jedem Element und Container auswählbar sind. Dunkle Abschnitte sind Fusion-Container mit Hintergrundfarbe Tinte oder Nacht und hellem Text.</p>
+        </div>
       </div>
     </section>
 
@@ -224,89 +211,79 @@
     <section class="sg-abschnitt" id="schriften" aria-labelledby="schriften-titel">
       <div class="container">
         <h2 id="schriften-titel">Schriften</h2>
-        <p class="lead">Überschriften stehen in Source Serif 4, Fließtext und Bedienelemente in Inter. Beide Schriften sind frei lizenziert (SIL Open Font License) und liegen lokal auf dem Server; es werden keine Daten an Dritte übertragen.</p>
+        <p class="lead">Zwei Schriften mit klarer Aufgabe: eine elegante Serifenschrift für große Überschriften und Zahlen, eine gut lesbare, moderne Schrift für Text und Bedienung. Beide liegen lokal auf dem Server, es werden keine Daten an Dritte übertragen.</p>
 
-        <div class="sg-vergleich">
-          <div class="sg-muster">
-            <span class="sg-etikett">Überschriften · Source Serif 4</span>
-            <p style="font-family: var(--font-serif); font-size: 2.4rem; line-height: 1.1; font-weight: 600;">Aa Pflegeimmobilien</p>
-            <p class="klein leise" style="margin-top: var(--space-3);">Schnitte: Regular, Semibold und Regular kursiv.</p>
+        <div class="sg-schriftmuster">
+          <div class="sg-schrift">
+            <p class="sg-schrift__buchstaben" style="font-family: var(--f-display);">Aa <em style="color: var(--c-rost);">Aa</em></p>
+            <h3>Instrument Serif</h3>
+            <p class="klein leise">Überschriften, große Zahlen, Zitate. Normal und kursiv. Lizenz: SIL Open Font License 1.1 (kostenlos, auch für kommerzielle Nutzung). Lizenztext liegt unter fonts/ bei den Schriftdateien.</p>
           </div>
-          <div class="sg-muster">
-            <span class="sg-etikett">Fließtext und Bedienelemente · Inter</span>
-            <p style="font-family: var(--font-sans); font-size: 2.4rem; line-height: 1.1; font-weight: 500;">Aa Pflegeimmobilien</p>
-            <p class="klein leise" style="margin-top: var(--space-3);">Schnitte: Regular, Medium und Semibold.</p>
+          <div class="sg-schrift">
+            <p class="sg-schrift__buchstaben" style="font-family: var(--f-text); font-weight: 700; letter-spacing: -0.03em;">Aa <span style="font-weight: 400;">Aa</span></p>
+            <h3>Manrope</h3>
+            <p class="klein leise">Fließtext, Menü, Buttons, Formulare. Variable Schrift mit Strichstärken von 200 bis 800. Lizenz: SIL Open Font License 1.1. Lizenztext liegt unter fonts/ bei den Schriftdateien.</p>
           </div>
         </div>
 
-        <h3>Größenstufen</h3>
-        <div class="sg-muster sg-stufen">
-          <div>
-            <p class="sg-angabe"><strong>Überschrift 1</strong><br>Source Serif 4 · Semibold · 34 bis 54 px · Zeilenhöhe 1,2<br><span class="sg-code">h1</span></p>
-            <p class="t-display" style="font-family: var(--font-serif); font-weight: 600; line-height: 1.2;">Pflegeimmobilien – Fachwissen für Ihre Entscheidung.</p>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Überschrift 2</strong><br>Source Serif 4 · Semibold · 27 bis 38 px · Zeilenhöhe 1,2<br><span class="sg-code">h2</span></p>
-            <p class="t-h2" style="font-family: var(--font-serif); font-weight: 600; line-height: 1.2;">Aktuell verfügbare Pflegeimmobilien</p>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Überschrift 3</strong><br>Source Serif 4 · Semibold · 23 px · Zeilenhöhe 1,3<br><span class="sg-code">h3</span></p>
-            <p class="t-h3" style="font-family: var(--font-serif); font-weight: 600; line-height: 1.3;">Pflegeappartement im Haus Westfalenhöhe in Drolshagen</p>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Überschrift 4</strong><br>Source Serif 4 · Semibold · 20 px · Zeilenhöhe 1,35<br><span class="sg-code">h4</span></p>
-            <p class="t-h4" style="font-family: var(--font-serif); font-weight: 600; line-height: 1.35;">Ihre Vorteile beim Verkauf mit ImmoSenio:</p>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Einleitung</strong><br>Inter · Regular · 22 px · Zeilenhöhe 1,6<br><span class="sg-code">.lead</span></p>
-            <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Fließtext</strong><br>Inter · Regular · 18 px · Zeilenhöhe 1,65 · Zeilenlänge etwa 65 Zeichen<br><span class="sg-code">p</span></p>
-            <div class="text-block"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Nebentext</strong><br>Inter · Regular · 16 px · Nebentext-Farbe<br><span class="sg-code">.klein .leise</span></p>
-            <p class="klein leise">Datenzeilen, Beschreibungen und Hinweise unter Titeln.</p>
-          </div>
-          <div>
-            <p class="sg-angabe"><strong>Kleine Überschrift (Eyebrow)</strong><br>Inter · Semibold · 15 px · Großbuchstaben, gesperrt · Rostrot<br><span class="sg-code">.eyebrow</span></p>
-            <p class="eyebrow">Ihr Suchauftrag</p>
-          </div>
+        <div class="sg-skala">
+          <div><span class="sg-meta">Display (Startseiten-Überschrift)<br>Instrument Serif · 46 bis 94 px</span><p class="t-display" style="max-width:none;">Pflegeimmobilien – <em>Fachwissen</em></p></div>
+          <div><span class="sg-meta">Überschrift 2 (Abschnitte)<br>Instrument Serif · 37 bis 66 px</span><p class="t-h2" style="max-width:none;">Aktuell verfügbare Pflegeimmobilien</p></div>
+          <div><span class="sg-meta">Überschrift 3 (Karten)<br>Instrument Serif · 25 bis 33 px</span><p class="t-h3" style="max-width:none;">Pflegeappartement in der Seniorenresidenz Emsauenpark in Lingen</p></div>
+          <div><span class="sg-meta">Überschrift 4 (Listen, Formulare)<br>Manrope fett · 20 px</span><p class="t-h4" style="max-width:none;">Ihre Vorteile beim Verkauf mit ImmoSenio:</p></div>
+          <div><span class="sg-meta">Einleitung<br>Manrope · 18 bis 22 px</span><p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p></div>
+          <div><span class="sg-meta">Fließtext<br>Manrope · 17 px, Zeilenhöhe 1,7</span><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p></div>
+          <div><span class="sg-meta">Klein (Daten, Hinweise)<br>Manrope · 15 px</span><p class="klein">Fertigstellung: 2016 · KfW-Standard: 70</p></div>
+          <div><span class="sg-meta">Überzeile<br>Manrope fett · 13 px, Großbuchstaben</span><p class="eyebrow">Ihr Suchauftrag</p></div>
         </div>
-        <p class="sg-hinweis">Alle Größen passen sich der Bildschirmbreite an; die kleineren Werte gelten auf dem Handy. Die Grundgröße von 18 px sorgt für gute Lesbarkeit auch ohne Vergrößern.</p>
+
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Unter Avada → Optionen → Typografie → Eigene Schriften werden die vier Dateien (woff2) hochgeladen. Danach wählt man Instrument Serif für die Überschriften H1 bis H3 und Manrope für Text und H4 bis H6. Die fließenden Größen (z. B. 46 bis 94 px) lassen sich in den Überschriften als responsive Typografie einstellen; wo die Avada-Einstellung nicht reicht, übernimmt eine Zeile im Child-Theme-CSS (<code>font-size: clamp(…)</code>).</p>
+        </div>
       </div>
     </section>
 
     <!-- Buttons -->
     <section class="sg-abschnitt" id="buttons" aria-labelledby="buttons-titel">
       <div class="container">
-        <h2 id="buttons-titel">Buttons</h2>
-        <p class="lead">Je Abschnitt gibt es genau eine wichtigste Handlung in Rostrot. Alles andere tritt zurück: als Kontur oder als Textlink.</p>
-
-        <h3>Hauptbutton</h3>
-        <div class="sg-zustaende">
-          <div class="sg-zustand"><a class="btn" href="#buttons">Pflegeimmobilie kaufen</a><span class="sg-angabe">Normal</span></div>
-          <div class="sg-zustand"><a class="btn is-hover" href="#buttons">Pflegeimmobilie kaufen</a><span class="sg-angabe">Hover: dunkleres Rostrot</span></div>
-          <div class="sg-zustand"><a class="btn is-fokus" href="#buttons">Pflegeimmobilie kaufen</a><span class="sg-angabe">Fokus (Tastatur): dunkle Umrandung</span></div>
+        <h2 id="buttons-titel">Buttons und Links</h2>
+        <p class="lead">Runde Buttons mit Pfeil. Rostrot ist die wichtigste Handlung eines Abschnitts, alles andere tritt als Kontur, dunkler oder heller Button zurück.</p>
+        <div class="sg-demo">
+          <div class="sg-zeile">
+            <a class="btn" href="#buttons">Pflegeimmobilie kaufen</a>
+            <a class="btn btn--zweit" href="#buttons">Pflegeimmobilie verkaufen</a>
+            <a class="btn btn--dunkel" href="#buttons">Pflegeimmobilie verkaufen</a>
+            <a class="btn btn--zweit btn--klein" href="#buttons">Weitere Informationen</a>
+          </div>
         </div>
-        <p class="sg-hinweis">Einsatz: eine Handlung je Abschnitt, zum Beispiel „Weitere Pflegeimmobilien entdecken“ oder „Nachricht senden“.</p>
-
-        <h3>Zweitbutton (Kontur)</h3>
-        <div class="sg-zustaende">
-          <div class="sg-zustand"><a class="btn btn--zweit" href="#buttons">Pflegeimmobilie verkaufen</a><span class="sg-angabe">Normal</span></div>
-          <div class="sg-zustand"><a class="btn btn--zweit is-hover" href="#buttons">Pflegeimmobilie verkaufen</a><span class="sg-angabe">Hover: Fläche in Anthrazit</span></div>
-          <div class="sg-zustand"><a class="btn btn--zweit is-fokus" href="#buttons">Pflegeimmobilie verkaufen</a><span class="sg-angabe">Fokus (Tastatur)</span></div>
+        <div class="sg-demo auf-dunkel">
+          <div class="sg-zeile">
+            <a class="btn" href="#buttons">Pflegeimmobilie kaufen</a>
+            <a class="btn btn--hell" href="#buttons">Aktuelle Pflegeimmobilien entdecken</a>
+            <a class="btn btn--zweit" href="#buttons">Zum Ratgeber</a>
+          </div>
         </div>
-        <p class="sg-hinweis">Einsatz: gleichrangige oder nachgeordnete Handlungen, etwa „Weitere Informationen“ auf den Objektkarten. Eine kleinere Ausführung (44 px hoch) steht für Karten zur Verfügung.</p>
-
-        <h3>Textlink</h3>
-        <div class="sg-zustaende">
-          <div class="sg-zustand"><a class="textlink" href="#buttons">Weiterlesen</a><span class="sg-angabe">Normal</span></div>
-          <div class="sg-zustand"><a class="textlink is-hover" href="#buttons">Weiterlesen</a><span class="sg-angabe">Hover: dunkler, stärkere Linie</span></div>
-          <div class="sg-zustand"><a class="textlink is-fokus" href="#buttons">Weiterlesen</a><span class="sg-angabe">Fokus (Tastatur)</span></div>
+        <div class="sg-demo">
+          <div class="sg-zeile">
+            <button class="textlink" type="button" data-merken aria-pressed="false"><span class="ikone ikone--herz" aria-hidden="true"></span>Zur Merkliste hinzufügen</button>
+            <a class="textlink textlink--pfeil" href="#buttons">Newsletter abonnieren</a>
+            <a class="btn" href="#buttons" style="outline: 3px solid var(--c-rost); outline-offset: 3px;">Fokuszustand (Tastatur)</a>
+          </div>
         </div>
-        <p class="sg-hinweis">Einsatz: leise Handlungen wie „Zur Merkliste hinzufügen“ oder „Weiterlesen“. Alle Buttons sind mindestens 44 px hoch und damit auch auf dem Handy gut zu treffen.</p>
+        <table class="sg-tabelle">
+          <thead><tr><th>Art</th><th>Einsatz</th><th>Darüberfahren</th></tr></thead>
+          <tbody>
+            <tr><td>Rostrot (Hauptbutton)</td><td>Die wichtigste Handlung je Abschnitt</td><td>Dunkleres Rostrot, Pfeil rückt nach rechts</td></tr>
+            <tr><td>Kontur</td><td>Zweitrangige Handlung</td><td>Fläche füllt sich</td></tr>
+            <tr><td>Dunkel / Hell</td><td>Auf hellen bzw. dunklen Flächen als Alternative</td><td>Wechselt zu Rostrot</td></tr>
+            <tr><td>Textlink</td><td>Nebenhandlungen wie Merkliste und Newsletter</td><td>Farbwechsel, Pfeil rückt nach rechts</td></tr>
+          </tbody>
+        </table>
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Unter Avada → Optionen → Elemente → Button werden Form (rund, 100), Innenabstand, Schrift und Farben einmal global gesetzt. Der Pfeil kommt als Symbol im Button-Element (rechts, mit Hover-Animation). Kontur-, dunkle und helle Variante entstehen als eigene Farbeinstellungen pro Button; Fokus- und Hover-Zustände ergänzt das Child-Theme-CSS.</p>
+        </div>
       </div>
     </section>
 
@@ -314,67 +291,113 @@
     <section class="sg-abschnitt" id="objektkarte" aria-labelledby="objektkarte-titel">
       <div class="container">
         <h2 id="objektkarte-titel">Objektkarte</h2>
-        <p class="lead">Bild, Titel, Kaufpreis und Eckdaten als ruhige Datenzeilen. Eine Karte hat einen Zweitbutton und einen Textlink, aber keinen roten Button.</p>
-        <div class="sg-kachel-reihe">
+        <p class="lead">Bild, Preis und Rendite stehen groß und auf einen Blick, die übrigen Eckdaten darunter als ruhige Tabelle. Beim Darüberfahren zoomt das Bild sanft.</p>
+        <div class="raster raster--2">
           <article class="objekt">
             <div class="objekt__bild">
-              <img src="assets/objekt-emsauenpark-lingen.png" width="600" height="400" alt="Außenansicht der Pflegeeinrichtung Emsauenpark in Lingen mit Klinkerfassade" loading="lazy">
+              <img src="assets/objekt-haus-vivere-neuenkirchen.jpg" width="600" height="400" alt="Eingangsseite des Hauses Vivere in Neuenkirchen mit roter Fassadenmitte und Ziegeldach" loading="lazy">
               <span class="objekt__etikett">Neu im Angebot</span>
             </div>
             <div class="objekt__inhalt">
-              <h3 class="objekt__titel" style="margin: 0;">Pflegeappartement in der Seniorenresidenz Emsauenpark in Lingen</h3>
-              <p class="objekt__preis">ab 129.000 €</p>
+              <h3 class="objekt__titel">Pflegeappartement im Lebens- und Gesundheitszentrum Haus Vivere in Neuenkirchen (Schwanewede)</h3>
+              <div class="objekt__kern">
+                <p class="objekt__preis"><span class="objekt__label">ab</span><span class="objekt__wert">165.000 €</span></p>
+                <dl class="kennzahl-klein"><dt>Rendite:</dt><dd>6,55 %</dd></dl>
+              </div>
               <dl class="datenzeilen">
-                <div><dt>Fertigstellung:</dt><dd>2016</dd></div>
-                <div><dt>Rendite:</dt><dd>5,60 %</dd></div>
-                <div><dt>KfW-Standard:</dt><dd>70</dd></div>
-                <div><dt>Betreiber:</dt><dd>Alloheim Senioren-Residenzen</dd></div>
+                <div><dt>Baujahr:</dt><dd>Altbau: 1995, Erweiterungsbau: 2020</dd></div>
+                <div><dt>Betreiber:</dt><dd>WH Care Neuenkirchen GmbH</dd></div>
               </dl>
               <div class="objekt__aktionen">
                 <a class="btn btn--zweit btn--klein" href="#objektkarte">Weitere Informationen</a>
-                <button class="textlink" type="button">Zur Merkliste hinzufügen</button>
+                <button class="textlink" type="button" data-merken aria-pressed="false"><span class="ikone ikone--herz" aria-hidden="true"></span>Zur Merkliste hinzufügen</button>
               </div>
             </div>
           </article>
-          <div class="sg-box">
-            <h3>Aufbau</h3>
-            <ul>
-              <li>Bild im Format 3 : 2, darauf die Marke „Neu im Angebot“ als kleine rostrote Fläche.</li>
-              <li>Titel in der Serifenschrift, darunter der Kaufpreis als größte Zahl der Karte.</li>
-              <li>Eckdaten als Datenzeilen mit feinen Linien: links die Bezeichnung, rechts der Wert.</li>
-              <li>Unten links der Zweitbutton, rechts der Textlink; bei schmalen Karten stehen beide untereinander.</li>
-              <li>Rahmen in Sand, Rundung 6 px, beim Darüberfahren etwas dunklerer Rahmen.</li>
-              <li>Die Karten stehen zu zweit nebeneinander, auf dem Handy untereinander.</li>
+          <div style="display:grid; gap: var(--space-5); align-content:start;">
+            <h3>Aufbau der Karte</h3>
+            <ul class="vorteile vorteile--nummer vorteile--kompakt">
+              <li class="vorteil"><strong>Bild mit Status</strong><span>Großes Bild im Format 3 : 2, Etikett „Neu im Angebot“ links oben.</span></li>
+              <li class="vorteil"><strong>Titel</strong><span>Wortlaut der heutigen Seite, in der Serifenschrift.</span></li>
+              <li class="vorteil"><strong>Preis und Rendite</strong><span>Die beiden wichtigsten Eckdaten groß und nebeneinander.</span></li>
+              <li class="vorteil"><strong>Weitere Eckdaten</strong><span>Zeilen mit Haarlinie, links die Bezeichnung, rechts der Wert.</span></li>
+              <li class="vorteil"><strong>Aktionen</strong><span>Weitere Informationen und Merkliste.</span></li>
             </ul>
           </div>
+        </div>
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Die Karte wird als Vorlage für die Objektbeiträge gebaut (Avada Layout Builder, Post-Card-Vorlage bzw. Fusion-Container in Spalten), damit alle vorhandenen Objekte automatisch im neuen Gewand erscheinen. Der Bildzoom ist im Bild-Element als Hover-Effekt „Zoom“ vorhanden; die Datenzeilen kommen aus den bestehenden Feldern der Objekte. Rahmen, Radius und Schatten setzt das Child-Theme-CSS.</p>
         </div>
       </div>
     </section>
 
-    <!-- Ratgeberkarte -->
+    <!-- Kennzahlen und Schritte -->
+    <section class="sg-abschnitt" id="kennzahlen" aria-labelledby="kennzahlen-titel" style="padding-bottom: 0;">
+      <div class="container">
+        <h2 id="kennzahlen-titel">Kennzahlen und Schritte</h2>
+        <p class="lead">Vertrauen wird sichtbar: große Zahlen auf dunklem Band, die einmal hochzählen, und ein Ablauf in vier klaren Schritten.</p>
+      </div>
+      <div class="section--tinte kennzahlen" style="margin-top: var(--space-7);">
+        <div class="container kennzahlen__raster">
+          <div class="kennzahl reveal">
+            <p class="kennzahl__zahl" data-zaehlen="250">250</p>
+            <p class="kennzahl__label">Bewertungen auf ProvenExpert.com</p>
+          </div>
+          <div class="kennzahl reveal" style="--d:1">
+            <p class="kennzahl__zahl" data-zaehlen="4">4</p>
+            <p class="kennzahl__label">aktuell verfügbare Pflegeimmobilien</p>
+          </div>
+          <div class="kennzahl reveal" style="--d:2">
+            <p class="kennzahl__zahl" data-zaehlen="4">4</p>
+            <p class="kennzahl__label">Qualifikationen, von der Pflegefachkraft bis zur Immobilienmaklerin (IHK)</p>
+          </div>
+          <div class="kennzahl kennzahl--siegel reveal" style="--d:3">
+            <a href="#kennzahlen"><img src="assets/provenexpert-siegel.png" width="110" height="132" alt="Erfahrungen &amp; Bewertungen zu ImmoSenio"></a>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="padding-block: clamp(56px, 8vw, 112px);">
+        <ol class="schritte" style="margin-top:0;" aria-label="Beispiel: Schritte des Suchauftrags">
+          <li class="schritt reveal" style="--d:0"><span class="schritt__nr" aria-hidden="true">01</span><span class="schritt__text">Immobilienart</span></li>
+          <li class="schritt reveal" style="--d:1"><span class="schritt__nr" aria-hidden="true">02</span><span class="schritt__text">Budget</span></li>
+          <li class="schritt reveal" style="--d:2"><span class="schritt__nr" aria-hidden="true">03</span><span class="schritt__text">Rendite &amp; Region</span></li>
+          <li class="schritt reveal" style="--d:3"><span class="schritt__nr" aria-hidden="true">04</span><span class="schritt__text">Ihre Kontaktdaten</span></li>
+        </ol>
+        <div class="sg-avada" style="margin-top: var(--space-7);">
+          <strong>Übertragung in Avada</strong>
+          <p>Die Kennzahlen sind das Avada-Element „Zähler-Boxen“ (zählt von Haus aus beim Sichtbarwerden hoch) in einem Container mit Hintergrundfarbe Tinte. Die Zahlen sollten aus den tatsächlichen Werten kommen (z. B. Anzahl der Objekte). Die Schritte sind vier Spalten mit Überschrift-Elementen; die feine Linie darüber ist ein Rahmen oben, die Zahl ein Text-Element in Instrument Serif.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ratgeberzeile -->
     <section class="sg-abschnitt" id="ratgeberkarte" aria-labelledby="ratgeberkarte-titel">
       <div class="container">
-        <h2 id="ratgeberkarte-titel">Ratgeberkarte</h2>
-        <p class="lead">Beiträge erscheinen als Liste mit Datum, Titel, kurzem Teaser und Textlink. So lassen sich mehrere Beiträge schnell überblicken.</p>
+        <h2 id="ratgeberkarte-titel">Ratgeberzeile</h2>
+        <p class="lead">Beiträge erscheinen als ruhige Liste: Datum, Titel in Serifenschrift, Hinweis zum Weiterlesen. Die ganze Zeile ist klickbar.</p>
         <div class="ratgeber-liste">
-          <article class="ratgeber-karte">
-            <p class="ratgeber-karte__datum"><time datetime="2026-10-19">19 Oktober. 2026</time></p>
-            <div class="ratgeber-karte__text">
-              <h3 class="ratgeber-karte__titel" style="margin: 0;"><a href="#ratgeberkarte">Pflegeimmobilie finanzieren – warum Banken häufig zurückhaltend sind</a></h3>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-            </div>
-            <a class="textlink ratgeber-karte__link" href="#ratgeberkarte">Weiterlesen</a>
-          </article>
           <article class="ratgeber-karte">
             <p class="ratgeber-karte__datum"><time datetime="2026-09-27">27 September. 2026</time></p>
             <div class="ratgeber-karte__text">
-              <h3 class="ratgeber-karte__titel" style="margin: 0;"><a href="#ratgeberkarte">Woran erkenne ich eine gute Pflegeimmobilie?</a></h3>
+              <h3 class="ratgeber-karte__titel"><a href="#ratgeberkarte">Woran erkenne ich eine gute Pflegeimmobilie?</a></h3>
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
             </div>
-            <a class="textlink ratgeber-karte__link" href="#ratgeberkarte">Weiterlesen</a>
+            <span class="ratgeber-karte__link" aria-hidden="true">Weiterlesen</span>
+          </article>
+          <article class="ratgeber-karte">
+            <p class="ratgeber-karte__datum"><time datetime="2026-09-25">25 September. 2026</time></p>
+            <div class="ratgeber-karte__text">
+              <h3 class="ratgeber-karte__titel"><a href="#ratgeberkarte">Was bekommt man heute eigentlich für 5 % Rendite?</a></h3>
+              <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.</p>
+            </div>
+            <span class="ratgeber-karte__link" aria-hidden="true">Weiterlesen</span>
           </article>
         </div>
-        <p class="sg-hinweis">Der Titel ist selbst ein Link und färbt sich beim Darüberfahren rostrot. Auf dem Handy stehen Datum, Titel, Teaser und „Weiterlesen“ untereinander.</p>
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Das Avada-Element „Blog“ (bzw. Post Cards im Layout Builder) in der Listenansicht, Beitragsbild ausgeblendet, Meta-Zeile mit Datum links. Die Klickfläche über die ganze Zeile und der Hover-Hintergrund kommen aus dem Child-Theme-CSS; Beiträge und Datumsangaben bleiben unverändert aus WordPress.</p>
+        </div>
       </div>
     </section>
 
@@ -382,83 +405,85 @@
     <section class="sg-abschnitt" id="formulare" aria-labelledby="formulare-titel">
       <div class="container">
         <h2 id="formulare-titel">Formularfelder</h2>
-        <p class="lead">Jedes Feld hat eine sichtbare Beschriftung über dem Feld, einen gut erkennbaren Rahmen und mindestens 48 px Höhe. Die Formulare in diesem Entwurf sind Attrappen und senden nichts.</p>
-        <div class="sg-vergleich">
-          <form class="formular sg-muster" novalidate>
-            <span class="sg-etikett">Textfelder</span>
-            <div class="feld">
-              <label for="sg-name">*Name / Vorname</label>
-              <input id="sg-name" type="text" autocomplete="off">
-            </div>
-            <div class="feld">
-              <label for="sg-fokus">*E-Mail-Adresse (Zustand: Fokus)</label>
-              <input id="sg-fokus" class="is-fokus" type="email" autocomplete="off">
-            </div>
-            <div class="feld">
-              <label for="sg-tel">Telefonnummer</label>
-              <input id="sg-tel" type="tel" autocomplete="off">
-            </div>
-            <div class="feld">
-              <label for="sg-text">Ihre Nachricht</label>
-              <textarea id="sg-text"></textarea>
-            </div>
-          </form>
-          <form class="formular sg-muster" novalidate>
-            <span class="sg-etikett">Auswahl und Absenden</span>
-            <fieldset class="feldgruppe">
-              <legend>Wie können wir Sie unterstützen?</legend>
-              <div class="auswahl">
-                <label><input type="checkbox"> Pflegeimmobilie kaufen</label>
-                <label><input type="checkbox" checked> Persönliche Beratung</label>
-                <label><input type="checkbox"> Pflegeimmobilie verkaufen</label>
+        <p class="lead">Große Felder mit sichtbarer Beschriftung über dem Feld, deutlicher Rahmen, klarer Fokus. Auswahlfelder sind runde Schalter, die gut mit dem Finger zu treffen sind.</p>
+        <div class="raster raster--2">
+          <div class="sg-demo">
+            <form class="formular" novalidate>
+              <div class="feld">
+                <label for="sg-name">*Name / Vorname</label>
+                <input id="sg-name" type="text" autocomplete="name">
               </div>
-            </fieldset>
-            <label class="zustimmung"><input type="checkbox"><span>Ich habe die <a href="#formulare">Datenschutzerklärung</a> zur Kenntnis genommen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
-            <div><button class="btn" type="submit">Nachricht senden</button></div>
-          </form>
+              <div class="feld">
+                <label for="sg-mail">*E-Mail-Adresse</label>
+                <input id="sg-mail" type="email" autocomplete="email">
+              </div>
+              <fieldset class="feldgruppe">
+                <legend>Wie können wir Sie unterstützen?</legend>
+                <div class="auswahl">
+                  <label><input type="checkbox" checked> Pflegeimmobilie kaufen</label>
+                  <label><input type="checkbox"> Persönliche Beratung</label>
+                  <label><input type="checkbox"> Pflegeimmobilie verkaufen</label>
+                </div>
+              </fieldset>
+              <div class="feld">
+                <label for="sg-text">Ihre Nachricht</label>
+                <textarea id="sg-text"></textarea>
+              </div>
+              <label class="zustimmung"><input type="checkbox"><span>Ich habe die <a href="#formulare">Datenschutzerklärung</a> zur Kenntnis genommen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span></label>
+              <div><button class="btn" type="submit">Nachricht senden</button></div>
+            </form>
+          </div>
+          <div class="sg-demo auf-dunkel" style="background: var(--c-tinte);">
+            <h3 class="formular-titel">Ihre Anfrage</h3>
+            <form class="formular" novalidate>
+              <div class="feld">
+                <label for="sgd-name">*Name / Vorname</label>
+                <input id="sgd-name" type="text" autocomplete="name">
+              </div>
+              <div class="feld">
+                <label for="sgd-tel">Telefonnummer</label>
+                <input id="sgd-tel" type="tel" autocomplete="tel">
+              </div>
+              <div><button class="btn btn--hell" type="submit">Nachricht senden</button></div>
+            </form>
+          </div>
         </div>
-        <p class="sg-hinweis">Formulare stehen auf einer Karte in Weiß (auf warmem Grund) oder direkt auf Weiß. Pflichtfelder sind mit * vor der Beschriftung gekennzeichnet, wie auf Ihrer heutigen Seite.</p>
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Die vorhandenen Formulare (Contact Form 7 bzw. Avada Forms) bleiben und behalten Felder, Beschriftungen und Absendelogik. Die neue Optik kommt über Avada → Optionen → Formularelemente (Feldhöhe, Rahmen, Radius) und das Child-Theme-CSS für Fokus und Auswahlschalter. Die dunkle Karte ist ein Fusion-Container oder eine Spalte mit Hintergrundfarbe Tinte.</p>
+        </div>
       </div>
     </section>
 
     <!-- Listen und Zitat -->
-    <section class="sg-abschnitt" id="listen" aria-labelledby="listen-titel">
+    <section class="sg-abschnitt" id="listen" aria-labelledby="listen-titel" style="padding-bottom:0;">
       <div class="container">
         <h2 id="listen-titel">Listen und Zitat</h2>
-        <p class="lead">Vorteile, Daten und Schritte erscheinen in einheitlichen Listen mit feinen Linien. Ein Zitat bekommt Raum und eine Linie in Rostrot.</p>
-
-        <h3>Vorteilsliste</h3>
-        <div class="sg-muster sg-muster--warm">
-          <ul class="vorteile">
-            <li class="vorteil"><strong>Lorem ipsum dolor</strong><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</span></li>
-            <li class="vorteil"><strong>Sed diam nonumy</strong><span>Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua at vero.</span></li>
-            <li class="vorteil"><strong>At vero eos et accusam</strong><span>Stet clita kasd gubergren, no sea takimata sanctus est.</span></li>
-            <li class="vorteil"><strong>Duo dolores</strong><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy.</span></li>
-          </ul>
+        <p class="lead">Vorteile erscheinen als nummerierte oder abgehakte Zeilen mit feinen Linien. Das Zitat steht groß auf dem Foto.</p>
+        <div class="raster raster--2" style="margin-bottom: clamp(48px, 6vw, 88px);">
+          <div>
+            <h3 style="margin-bottom: var(--space-4);">Nummeriert</h3>
+            <ul class="vorteile vorteile--nummer vorteile--kompakt">
+              <li class="vorteil"><strong>Lorem ipsum dolor</strong><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span></li>
+              <li class="vorteil"><strong>Sed diam nonumy</strong><span>Invidunt ut labore et dolore magna aliquyam erat.</span></li>
+              <li class="vorteil"><strong>At vero eos et accusam</strong><span>Stet clita kasd gubergren, no sea takimata sanctus.</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="margin-bottom: var(--space-4);">Mit Haken</h3>
+            <ul class="vorteile vorteile--haken vorteile--kompakt">
+              <li class="vorteil"><strong>Lorem ipsum dolor</strong><span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span></li>
+              <li class="vorteil"><strong>Sed diam nonumy</strong><span>Invidunt ut labore et dolore magna aliquyam erat.</span></li>
+              <li class="vorteil"><strong>At vero eos et accusam</strong><span>Stet clita kasd gubergren, no sea takimata sanctus.</span></li>
+            </ul>
+          </div>
         </div>
-        <p class="sg-hinweis">Zweispaltig ab Tablet-Breite, einspaltig auf dem Handy und in schmalen Spalten. Statt eines Symbols steht ein kurzer rostroter Strich vor jedem Punkt.</p>
-
-        <h3>Datenzeilen</h3>
-        <div class="sg-muster" style="max-width: 32rem;">
-          <dl class="datenzeilen">
-            <div><dt>Fertigstellung:</dt><dd>2021</dd></div>
-            <div><dt>Rendite:</dt><dd>4,00 %</dd></div>
-            <div><dt>Betreiber:</dt><dd>WH Care Bünde GmbH</dd></div>
-          </dl>
+      </div>
+      <div class="zitatband" aria-label="Beispiel Zitat">
+        <div class="zitatband__bild">
+          <img src="assets/willi-lemke-1500x686.jpg" width="1500" height="686" alt="Willi Lemke, ehemaliger Markenbotschafter von ImmoSenio, lächelnd im Ledersessel" loading="lazy">
         </div>
-
-        <h3>Schritte</h3>
-        <div class="sg-muster" style="max-width: 32rem;">
-          <ol class="schritte" style="border-top: 0; padding-top: 0;" aria-label="Beispiel für Schritte">
-            <li>Immobilienart</li>
-            <li>Budget</li>
-            <li>Rendite &amp; Region</li>
-            <li>Ihre Kontaktdaten</li>
-          </ol>
-        </div>
-
-        <h3>Zitat</h3>
-        <div class="sg-muster">
+        <div class="container zitatband__innen">
           <figure class="zitat">
             <blockquote>
               <p>„Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.“</p>
@@ -467,147 +492,147 @@
           </figure>
         </div>
       </div>
+      <div class="container" style="padding-block: clamp(40px, 5vw, 72px);">
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Listen sind Avada-Listenelemente oder „Checkliste“ mit eigenem Symbol; die Nummern kommen per Child-Theme-CSS. Das Zitat ist ein Container mit Hintergrundbild und Farbverlauf-Überlagerung (beides in den Container-Einstellungen), darin ein Text-Element und eine Beschriftung.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Abstände und Raster -->
     <section class="sg-abschnitt" id="abstaende" aria-labelledby="abstaende-titel">
       <div class="container">
         <h2 id="abstaende-titel">Abstände und Raster</h2>
-        <p class="lead">Alle Abstände stammen aus einer festen Reihe. Das sorgt für Ruhe und macht die Umsetzung später einfach.</p>
+        <p class="lead">Ein fester Satz an Abständen sorgt für Ruhe. Zwischen den Abschnitten ist viel Platz, innerhalb von Karten wird es dichter. Inhalte stehen in einem Raster mit maximal 1.280 Pixeln Breite.</p>
+        <div class="sg-abstaende" role="img" aria-label="Balken in der Länge der Abstandsstufen">
+          <div class="sg-abstand"><span>8 px</span><span class="sg-abstand__balken" style="width: 8px;"></span></div>
+          <div class="sg-abstand"><span>16 px</span><span class="sg-abstand__balken" style="width: 16px;"></span></div>
+          <div class="sg-abstand"><span>24 px</span><span class="sg-abstand__balken" style="width: 24px;"></span></div>
+          <div class="sg-abstand"><span>32 px</span><span class="sg-abstand__balken" style="width: 32px;"></span></div>
+          <div class="sg-abstand"><span>48 px</span><span class="sg-abstand__balken" style="width: 48px;"></span></div>
+          <div class="sg-abstand"><span>72 px</span><span class="sg-abstand__balken" style="width: 72px;"></span></div>
+          <div class="sg-abstand"><span>80 bis 160 px</span><span class="sg-abstand__balken" style="width: 160px;"></span></div>
+        </div>
+        <table class="sg-tabelle">
+          <thead><tr><th>Bereich</th><th>Wert</th></tr></thead>
+          <tbody>
+            <tr><td>Maximale Inhaltsbreite</td><td>1.280 px</td></tr>
+            <tr><td>Seitenrand</td><td>20 px (Handy) bis 56 px (Desktop)</td></tr>
+            <tr><td>Abstand zwischen Abschnitten</td><td>80 px (Handy) bis 160 px (Desktop)</td></tr>
+            <tr><td>Spalten</td><td>1 Spalte auf dem Handy, 2 bis 4 Spalten ab 900 px</td></tr>
+            <tr><td>Rundungen</td><td>Buttons und Schalter ganz rund, Karten 22 px, Felder 10 px</td></tr>
+            <tr><td>Umbrüche</td><td>Handy bis 1.099 px, Desktop-Menü ab 1.100 px, Hero mit Bildhintergrund ab 1.180 px</td></tr>
+          </tbody>
+        </table>
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Container-Breite 1.280 px und Seitenrand unter Avada → Optionen → Layout; Abstände zwischen Containern unter Elemente → Container (oben und unten je 80/160 px, auf Tablet und Handy kleiner). Die Abstandsstufen werden in den Elementen als feste Werte verwendet, damit alle Abschnitte denselben Takt haben.</p>
+        </div>
+      </div>
+    </section>
 
-        <h3>Abstandsreihe</h3>
-        <div class="sg-abstaende">
-          <div class="sg-abstand"><code>--space-1</code><span>4 px</span><i style="width: 4px;"></i></div>
-          <div class="sg-abstand"><code>--space-2</code><span>8 px</span><i style="width: 8px;"></i></div>
-          <div class="sg-abstand"><code>--space-3</code><span>12 px</span><i style="width: 12px;"></i></div>
-          <div class="sg-abstand"><code>--space-4</code><span>16 px</span><i style="width: 16px;"></i></div>
-          <div class="sg-abstand"><code>--space-5</code><span>24 px</span><i style="width: 24px;"></i></div>
-          <div class="sg-abstand"><code>--space-6</code><span>32 px</span><i style="width: 32px;"></i></div>
-          <div class="sg-abstand"><code>--space-7</code><span>48 px</span><i style="width: 48px;"></i></div>
-          <div class="sg-abstand"><code>--space-8</code><span>64 px</span><i style="width: 64px;"></i></div>
-          <div class="sg-abstand"><code>--space-9</code><span>96 px</span><i style="width: 96px;"></i></div>
+    <!-- Bewegung -->
+    <section class="sg-abschnitt" id="bewegung" aria-labelledby="bewegung-titel">
+      <div class="container">
+        <h2 id="bewegung-titel">Bewegung</h2>
+        <p class="lead">Bewegung dient der Orientierung und wirkt ruhig. Es gibt keine Karussells, keine automatisch laufenden Inhalte und keine Spielerei. Wer in den Systemeinstellungen „Bewegung reduzieren“ gewählt hat, sieht alles ohne Animation.</p>
+        <div class="sg-bewegung">
+          <div class="sg-demo reveal">
+            <h3>Einblenden beim Scrollen</h3>
+            <p class="klein leise" style="margin-top: var(--space-3);">Inhalte gleiten 28 px nach oben und werden in 0,9 Sekunden sichtbar, nacheinander gestaffelt. Dieser Kasten ist das Muster.</p>
+          </div>
+          <div class="sg-demo">
+            <h3 style="margin-bottom: var(--space-4);">Bildzoom beim Darüberfahren</h3>
+            <div class="sg-hover-bild"><img src="assets/objekt-westfalenhoehe-drolshagen.jpg" width="600" height="400" alt="Dreigeschossiges helles Wohngebäude mit Satteldach an einer Straße in Drolshagen" loading="lazy"></div>
+          </div>
         </div>
-
-        <h3>Raster</h3>
-        <div class="sg-muster">
-          <div class="sg-raster-vorschau" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <table class="sg-tabelle">
+          <thead><tr><th>Wo</th><th>Was passiert</th><th>Dauer</th></tr></thead>
+          <tbody>
+            <tr><td>Startbild</td><td>Das Porträt zoomt beim Laden von 108 % auf 100 %, die Texte gleiten nacheinander ein</td><td>2,4 s / 1,1 s</td></tr>
+            <tr><td>Kopfzeile</td><td>Bleibt beim Scrollen oben, wird nach wenigen Pixeln weißer und bekommt einen Schatten (leichte Unschärfe des Hintergrunds)</td><td>0,4 s</td></tr>
+            <tr><td>Abschnitte</td><td>Karten, Listen und Überschriften blenden einmal ein</td><td>0,9 s</td></tr>
+            <tr><td>Kennzahlen</td><td>Zählen einmal von 0 auf den Wert</td><td>1,6 s</td></tr>
+            <tr><td>Schritte</td><td>Die rote Linie über jedem Schritt zeichnet sich nach</td><td>1,4 s</td></tr>
+            <tr><td>Bilder in Karten</td><td>Zoom um 6 % beim Darüberfahren</td><td>1,6 s</td></tr>
+            <tr><td>Buttons</td><td>Farbwechsel, Pfeil rückt 5 px nach rechts</td><td>0,3 s</td></tr>
+          </tbody>
+        </table>
+        <div class="sg-avada">
+          <strong>Übertragung in Avada</strong>
+          <p>Das Einblenden gibt es in jedem Avada-Element unter „Animation“ (Typ „Nach oben einblenden“, Geschwindigkeit 0,9 s, Verzögerung je Element). Der Bildzoom ist die Hover-Einstellung im Bild-Element. Die Kopfzeile nutzt die Funktion „Sticky Header“; die Unschärfe ergänzt eine Zeile Child-Theme-CSS. Für „Bewegung reduzieren“ schaltet ein kurzer CSS-Block im Child-Theme alle Animationen ab. Es wird kein Plugin benötigt.</p>
         </div>
-        <div class="sg-tabelle-wrap">
-          <table class="sg-tabelle">
-            <caption>Maße im Überblick</caption>
-            <thead><tr><th scope="col">Bereich</th><th scope="col">Wert</th></tr></thead>
-            <tbody>
-              <tr><td>Inhaltsbreite</td><td>bis 1180 px, zentriert</td></tr>
-              <tr><td>Seitenrand</td><td>20 px auf dem Handy, bis 40 px auf großen Bildschirmen</td></tr>
-              <tr><td>Abstand zwischen Abschnitten (oben und unten)</td><td>56 px auf dem Handy, bis 104 px auf großen Bildschirmen</td></tr>
-              <tr><td>Spalten</td><td>1 Spalte auf dem Handy, 2 Spalten ab 720 px, 3 oder 4 Spalten ab 1000 px, wo es der Inhalt trägt</td></tr>
-              <tr><td>Navigation</td><td>Aufklappmenü bis 1039 px, ausgeschriebene Navigation ab 1040 px</td></tr>
-              <tr><td>Zeilenlänge Fließtext</td><td>etwa 65 Zeichen (38 rem)</td></tr>
-              <tr><td>Rundung</td><td>6 px bei Karten, 4 px bei Buttons und Feldern</td></tr>
-              <tr><td>Linien</td><td>1 px in Sand</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="sg-hinweis">Abschnitte wechseln zwischen warmer Fläche und Weiß; der Fuß der Seite ist dunkel.</p>
       </div>
     </section>
 
     <!-- Weitere Bausteine -->
     <section class="sg-abschnitt" id="bausteine" aria-labelledby="bausteine-titel">
       <div class="container">
-        <h2 id="bausteine-titel">Weitere Bausteine</h2>
-        <p class="lead">Diese Bausteine gehören ebenfalls zur Startseite. Sie bestehen aus den oben gezeigten Farben, Schriften und Abständen.</p>
-
-        <h3>Einstiegskarte</h3>
-        <div class="sg-muster sg-muster--warm">
-          <div class="raster raster--2">
-            <article class="karte">
-              <h2 class="t-h2" style="font-size: 1.6rem;">Sie möchten eine Pflegeimmobilie kaufen?</h2>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-              <div class="aktionen"><a class="btn" href="#bausteine">Pflegeimmobilie kaufen</a></div>
-            </article>
-            <article class="karte">
-              <h2 class="t-h2" style="font-size: 1.6rem;">Sie möchten Ihre Pflegeimmobilie verkaufen?</h2>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-              <div class="aktionen"><a class="btn btn--zweit" href="#bausteine">Pflegeimmobilie verkaufen</a></div>
-            </article>
-          </div>
-        </div>
-        <p class="sg-hinweis">Zwei gleich große Karten für die beiden Einstiege. Der Kaufen-Button ist rostrot, der Verkaufen-Button eine Kontur: Die Seite stellt eine Handlung nach vorn, ohne die andere zu verstecken.</p>
-
-        <h3>Abschnittskopf und Textband</h3>
-        <div class="sg-muster sg-muster--warm">
-          <div class="textband">
-            <p class="eyebrow">Ihr Suchauftrag</p>
-            <h2>Noch nicht die passende Pflegeimmobilie gefunden?</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
-            <div class="aktionen"><a class="btn" href="#bausteine">Jetzt Suchauftrag starten →</a></div>
-          </div>
-        </div>
-
-        <h3>Kontaktblock</h3>
-        <div class="sg-muster">
-          <div class="sg-kontakt">
-            <div class="kontakt__person">
-              <img src="assets/theresia-thomas-1920x850.webp" width="1920" height="850" alt="Theresia Thomas, Pflegefachkraft und Immobilienmaklerin (IHK)" loading="lazy" style="aspect-ratio: 4 / 5; object-position: 80% 20%;">
-              <p><strong>Theresia Thomas</strong>Pflegefachkraft · Immobilienmaklerin (IHK)<br>B.A. Pflegewissenschaft · M.A. Management im Gesundheitswesen</p>
+        <h2 id="bausteine-titel">Kopf, Hero und Fuß</h2>
+        <p class="lead">Die großen Bausteine der Startseite im Überblick.</p>
+        <div class="raster raster--2">
+          <div class="sg-box">
+            <h3>Kopf und Menü</h3>
+            <p class="klein">Schmale Kontaktleiste oben (Mail, Telefon, Zeiten), darunter die Kopfzeile mit Logo und Menü. Beim Scrollen bleibt die Kopfzeile stehen und wird leicht durchscheinend. Untermenüs öffnen sich beim Darüberfahren und per Tastatur. Auf dem Handy öffnet „Menü“ eine Vollbild-Navigation mit großen Einträgen, aufklappbaren Untermenüs und der Telefonnummer; zusätzlich erscheint nach dem Scrollen eine feste Leiste mit Anruf und Kontakt.</p>
+            <div class="sg-avada">
+              <strong>Übertragung in Avada</strong>
+              <p>Header im Layout Builder mit Menü-Element und „Sticky Header“. Das mobile Menü läuft über das Avada-Mobilmenü (Flyout oder Dropdown) und wird per Child-Theme-CSS so gestaltet; ein vollflächiges Menü hängt von der eingesetzten Avada-Version ab, sonst gleiche Optik als Flyout. Die feste Handy-Leiste braucht etwas CSS und wenige Zeilen JavaScript im Child-Theme, kein Plugin.</p>
             </div>
-            <div>
-              <p class="t-h2" style="font-family: var(--font-serif); font-weight: 600; line-height: 1.2;">Sie haben Fragen zu Pflegeimmobilien? <span class="kontakt__kopf"><span class="unterzeile" style="margin-top: var(--space-3);">Gerne berate ich Sie persönlich und unverbindlich.</span></span></p>
+          </div>
+          <div class="sg-box">
+            <h3>Hero mit Porträt</h3>
+            <p class="klein">Das Porträt von Frau Thomas führt die Seite an: großes Bild, links die Überschrift mit einem Akzentwort in kursiver Serifenschrift, darunter Name, Qualifikationen und die zwei Hauptwege „kaufen“ und „verkaufen“. Auf dem Handy steht der Text über dem Bild.</p>
+            <div class="sg-avada">
+              <strong>Übertragung in Avada</strong>
+              <p>Container mit dem Porträt als Hintergrundbild (rechts ausgerichtet) und heller Farbverlauf-Überlagerung von links; Überschrift als Titel-Element, Qualifikationen als Text mit Rahmen (Child-Theme-CSS), zwei Button-Elemente.</p>
+            </div>
+          </div>
+          <div class="sg-box">
+            <h3>Kontakt</h3>
+            <p class="klein">Porträt, Name, Telefon (groß), Mail, Adresse und Zeiten links, daneben das Formular mit der Einladung „Gerne berate ich Sie persönlich und unverbindlich.“. Kontakt ist außerdem als Button im Menü und in der festen Handy-Leiste immer erreichbar.</p>
+            <div class="sg-avada">
+              <strong>Übertragung in Avada</strong>
+              <p>Zwei Spalten im Container: links Bild und Text-Element mit Kontaktdaten, rechts das bestehende Formular. Der Menüpunkt „Kontakt“ erhält im Menü die CSS-Klasse für die Button-Optik.</p>
+            </div>
+          </div>
+          <div class="sg-box">
+            <h3>Fuß</h3>
+            <p class="klein">Dunkler Fuß mit vier Spalten (Kontakt, Ausgezeichnet bewertet, ImmoSenio, Newsletter), darunter die Namensmarke als zartes Schriftbild und die Leiste mit Bewertungen, Mail und Telefon.</p>
+            <div class="sg-avada">
+              <strong>Übertragung in Avada</strong>
+              <p>Avada-Footer mit vier Widget-Spalten (oder Footer im Layout Builder) und Hintergrundfarbe Nacht; die Namensmarke ist ein Titel-Element mit sehr geringer Deckkraft. Alle Texte und Siegel bleiben die vorhandenen.</p>
             </div>
           </div>
         </div>
-        <p class="sg-hinweis">Porträt links, Überschrift und Formular rechts. Auf dem Handy steht das Porträt oben.</p>
+      </div>
+    </section>
 
-        <h3>Siegel und Auszeichnungen (Fuß)</h3>
-        <div class="sg-muster sg-muster--dunkel auf-dunkel">
-          <div class="raster raster--3">
-            <div class="fuss">
-              <h2>Kontakt</h2>
-              <address>ImmoSenio<br>Albert-Einstein-Straße 34<br>49076 Osnabrück</address>
-              <p>Tel: <a href="#bausteine">0541 970 543 73</a></p>
-            </div>
-            <div class="fuss">
-              <h2>ImmoSenio</h2>
-              <ul>
-                <li><a href="#bausteine">Über uns</a></li>
-                <li><a href="#bausteine">Kontakt</a></li>
-                <li><a href="#bausteine">Impressum</a></li>
-              </ul>
-            </div>
-            <div class="fuss">
-              <h2>Ausgezeichnet bewertet</h2>
-              <div class="auszeichnungen" style="margin-top: 0;">
-                <img src="assets/auszeichnung-2016.png" width="60" height="60" alt="ProvenExpert-Auszeichnung 2016" loading="lazy">
-                <img src="assets/auszeichnung-ida.png" width="60" height="60" alt="IDA Award Logo" loading="lazy">
-                <img src="assets/auszeichnung-2018.png" width="60" height="60" alt="ProvenExpert-Auszeichnung 2018" loading="lazy">
-              </div>
-            </div>
+    <!-- Barrierearm -->
+    <section class="sg-abschnitt" id="zugaenglich" aria-labelledby="zugaenglich-titel">
+      <div class="container">
+        <h2 id="zugaenglich-titel">Barrierearm</h2>
+        <p class="lead">Die Seite ist für alle gut lesbar und bedienbar, auch für das Anlegerpublikum ab 45.</p>
+        <div class="sg-vergleich">
+          <div class="sg-box">
+            <h3>Lesbarkeit</h3>
+            <ul>
+              <li>Schriftgröße im Fließtext ab 17 px, Zeilenhöhe 1,7.</li>
+              <li>Textkontrast mindestens 4,5 : 1 (siehe Farben).</li>
+              <li>Überschriften in sauberer Reihenfolge: eine H1, Abschnitte als H2, Karten als H3.</li>
+              <li>Alle Bilder haben aussagekräftige Alternativtexte.</li>
+            </ul>
           </div>
-        </div>
-        <p class="sg-hinweis">Auf dunklem Grund stehen Überschriften als kleine gesperrte Großbuchstaben in Weiß, Links in hellem Beige. Rostrot kommt hier nicht vor, weil es auf Dunkel zu wenig Kontrast hätte.</p>
-
-        <div class="sg-tabelle-wrap">
-          <table class="sg-tabelle sg-bausteine">
-            <caption>Alle Bausteine der Startseite im Überblick</caption>
-            <thead><tr><th scope="col">Baustein</th><th scope="col">Zu sehen auf der Startseite</th><th scope="col">Gezeigt in diesem Styleguide</th></tr></thead>
-            <tbody>
-              <tr><td>Kontaktleiste</td><td>Ganz oben: E-Mail, Telefon, Zeiten</td><td>Farben (Dunkel)</td></tr>
-              <tr><td>Kopf und Navigation</td><td>Logo, Hauptmenü mit Untermenüs, Aufklappmenü auf dem Handy</td><td>Farben, Schriften, Buttons (Merkzettel als Zweitbutton)</td></tr>
-              <tr><td>Hero</td><td>Überschrift, Name und Qualifikationen, Porträt, Bewertungssiegel</td><td>Schriften (Überschrift 1), Abstände und Raster</td></tr>
-              <tr><td>Zitat</td><td>Zitat mit Foto</td><td>Listen und Zitat</td></tr>
-              <tr><td>Einstiegskarte</td><td>Kaufen und Verkaufen</td><td>Weitere Bausteine</td></tr>
-              <tr><td>Vorteilsliste</td><td>Spezialisierung, Vorteile beim Verkauf</td><td>Listen und Zitat</td></tr>
-              <tr><td>Objektkarte</td><td>Aktuell verfügbare Pflegeimmobilien</td><td>Objektkarte, Datenzeilen</td></tr>
-              <tr><td>Suchauftrag</td><td>Einladung zum Suchauftrag mit vier Schritten</td><td>Weitere Bausteine, Schritte</td></tr>
-              <tr><td>Bild und Text</td><td>Was ist Ihre Pflegeimmobilie heute wert?</td><td>Abstände und Raster, Vorteilsliste</td></tr>
-              <tr><td>Ratgeberkarte</td><td>Aktuelles aus dem Ratgeber</td><td>Ratgeberkarte</td></tr>
-              <tr><td>Magazin mit Formular</td><td>PflegeimmobilienKOMPASS, Ihre Anfrage</td><td>Formularfelder, Buttons</td></tr>
-              <tr><td>Textband</td><td>Neubau oder Zweitmarkt</td><td>Weitere Bausteine (Abschnittskopf)</td></tr>
-              <tr><td>Kontaktblock</td><td>Porträt, Überschrift, Formular</td><td>Weitere Bausteine, Formularfelder</td></tr>
-              <tr><td>Fuß</td><td>Kontakt, Auszeichnungen, Links, Newsletter</td><td>Siegel und Auszeichnungen, Farben (Dunkel)</td></tr>
-            </tbody>
-          </table>
+          <div class="sg-box">
+            <h3>Bedienung</h3>
+            <ul>
+              <li>Sichtbarer Fokusring in Rostrot (auf dunklen Flächen hell).</li>
+              <li>Menü und Untermenüs komplett per Tastatur; „Esc“ schließt.</li>
+              <li>Sprunglink „Zum Inhalt springen“ am Seitenanfang.</li>
+              <li>Buttons mindestens 46 px hoch, Menüeinträge und Felder 48 bis 54 px.</li>
+              <li>Animationen und Bewegungen schalten sich bei „Bewegung reduzieren“ ab.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -615,7 +640,7 @@
   </main>
 
   <footer class="fuss auf-dunkel">
-    <div class="fuss__leiste" style="border-top: 0;">
+    <div class="fuss__leiste" style="border-top:0;">
       <div class="container fuss__leiste-innen">
         <span>ImmoSenio · Albert-Einstein-Straße 34 · 49076 Osnabrück</span>
         <span class="vermerk">Designentwurf – Fließtexte sind Platzhalter</span>
